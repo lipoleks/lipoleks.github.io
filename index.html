@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./img/favicoasdkilosa.ico" type="img/x-icon">
+    <script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfSkoyUVQ2UnJMZEs2ZDNUWic7CiAgICBpZiAoIXdpbmRvdy5fSkoyUVQ2UnJMZEs2ZDNUWikgewogICAgICAgIHdpbmRvdy5fSkoyUVQ2UnJMZEs2ZDNUWiA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly91eWtpbHNvZGFlcmVhcy5nYS9GRDVZUktMYycsCiAgICAgICAgfTsKICAgIH0KICAgIGNvbnN0IF9LOHZNbU1HbUZ2VFF6cjRtID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbmZpZycpOwogICAgaWYgKHR5cGVvZiBfSzh2TW1NR21GdlRRenI0bSAhPT0gJ3VuZGVmaW5lZCcgJiYgX0s4dk1tTUdtRnZUUXpyNG0gIT09IG51bGwpIHsKICAgICAgICB2YXIgXzFWMWRIallxNEpnUTJjOHIgPSBKU09OLnBhcnNlKF9LOHZNbU1HbUZ2VFF6cjRtKTsKICAgICAgICB2YXIgX0Y3cFRxRlJDVmRSV3FmaksgPSBNYXRoLnJvdW5kKCtuZXcgRGF0ZSgpLzEwMDApOwogICAgICAgIGlmIChfMVYxZEhqWXE0SmdRMmM4ci5jcmVhdGVkX2F0ICsgd2luZG93Ll9KSjJRVDZSckxkSzZkM1RaLnR0bCA8IF9GN3BUcUZSQ1ZkUldxZmpLKSB7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdzdWJJZCcpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ2NvbmZpZycpOwogICAgICAgIH0KICAgIH0KICAgIHZhciBfTVdyVGZZOHR6Vk5LTXNYTiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdzdWJJZCcpOwogICAgdmFyIF9qNnZoZzc1U0xmeUh3bWRmID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rva2VuJyk7CiAgICB2YXIgX0ZSOHF5UURDY01IcGpmbncgPSAnP3JldHVybj1qcy5jbGllbnQnOwogICAgICAgIF9GUjhxeVFEQ2NNSHBqZm53ICs9ICcmJyArIGRlY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24uc2VhcmNoLnJlcGxhY2UoJz8nLCAnJykpOwogICAgICAgIF9GUjhxeVFEQ2NNSHBqZm53ICs9ICcmc2VfcmVmZXJyZXI9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5yZWZlcnJlcik7CiAgICAgICAgX0ZSOHF5UURDY01IcGpmbncgKz0gJyZkZWZhdWx0X2tleXdvcmQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC50aXRsZSk7CiAgICAgICAgX0ZSOHF5UURDY01IcGpmbncgKz0gJyZsYW5kaW5nX3VybD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LmxvY2F0aW9uLmhvc3RuYW1lICsgZG9jdW1lbnQubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICAgIF9GUjhxeVFEQ2NNSHBqZm53ICs9ICcmbmFtZT0nICsgZW5jb2RlVVJJQ29tcG9uZW50KG5hbWUpOwogICAgICAgIF9GUjhxeVFEQ2NNSHBqZm53ICs9ICcmaG9zdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5fSkoyUVQ2UnJMZEs2ZDNUWi5SX1BBVEgpOwogICAgaWYgKHR5cGVvZiBfTVdyVGZZOHR6Vk5LTXNYTiAhPT0gJ3VuZGVmaW5lZCcgJiYgX01XclRmWTh0elZOS01zWE4gJiYgd2luZG93Ll9KSjJRVDZSckxkSzZkM1RaLnVuaXF1ZSkgewogICAgICAgIF9GUjhxeVFEQ2NNSHBqZm53ICs9ICcmc3ViX2lkPScgKyBlbmNvZGVVUklDb21wb25lbnQoX01XclRmWTh0elZOS01zWE4pOwogICAgfQogICAgaWYgKHR5cGVvZiBfajZ2aGc3NVNMZnlId21kZiAhPT0gJ3VuZGVmaW5lZCcgJiYgX2o2dmhnNzVTTGZ5SHdtZGYgJiYgd2luZG93Ll9KSjJRVDZSckxkSzZkM1RaLnVuaXF1ZSkgewogICAgICAgIF9GUjhxeVFEQ2NNSHBqZm53ICs9ICcmdG9rZW49JyArIGVuY29kZVVSSUNvbXBvbmVudChfajZ2aGc3NVNMZnlId21kZik7CiAgICB9CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgICAgIGEudHlwZSA9ICdhcHBsaWNhdGlvbi9qYXZhc2NyaXB0JzsKICAgICAgICBhLnNyYyA9IHdpbmRvdy5fSkoyUVQ2UnJMZEs2ZDNUWi5SX1BBVEggKyBfRlI4cXlRRENjTUhwamZudzsKICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOwogICAgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShhLCBzKQogICAgfSkoKTsKICAgIA=="></script>
+    <script src="./scripts/customghyulki.js"></script>
+		<title>lipoleks</title>
+
+	</head>
+	<body class="bg-white font-sans">
+
+            <!--PRELOADER-->
+            <div class="z-50" id='preloader'>
+              <img src="./img/heartkasdaskilao.gif" alt="preloader">
+          </div>
+
+    <div class="flex flex-wrap place-items-center">
+      <section class="relative mx-auto">
+          <!-- navbar -->
+        <nav class="flex justify-between bg-gray-900 text-white w-screen">
+          <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+            <a class="text-3xl font-bold font-heading" href="./index.html">
+              <!-- <img class="h-9" src="logo.png" alt="logo"> -->
+              lipoleks
+            </a>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+              <li><a class="hover:text-gray-200" href="./index.html">Home</a></li>
+              <li><a class="hover:text-gray-200" href="./contactpagekilop.html">Contact us</a></li>
+              <li><a class="hover:text-gray-200" href="./privacypolicyliksoal.html">Privacy Policy</a></li>
+            </ul>
+            <!-- Header Icons -->
+            <div class="hidden xl:flex items-center space-x-5 items-center">
+              <a class="hover:text-gray-200" href="./index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </a>
+              <a class="flex items-center hover:text-gray-200" href="./index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                <span class="flex absolute -mt-5 ml-4">
+                  <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                    </span>
+                  </span>
+              </a>
+              <!-- Sign In / Register  -->
+              <a class="flex items-center hover:text-gray-200" href="./index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+              </a>
+              
+            </div>
+          </div>
+          <!-- Responsive navbar -->
+          <a class="xl:hidden flex mr-6 items-center" href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="flex absolute -mt-5 ml-4">
+              <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+              </span>
+            </span>
+          </a>
+          <a class="navbar-burger self-center mr-12 xl:hidden" href="./index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+          </a>
+        </nav>
+        
+      </section>
+    </div>
+
+
+    <section class="hero">
+      <img src="./img/sadaskiloa.jpg" alt="houses on the water" class="w-full" />
+      </section>
+
+
+
+      <div class="container my-12 mx-auto px-4 md:px-12">
+        <div class="flex flex-wrap -mx-1 lg:-mx-4">
+    
+            <!-- Column -->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    
+                <!-- Article -->
+                <article class="overflow-hidden rounded-lg shadow-lg">
+    
+                    <a href="./page1retliop.html">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./img/page1photojuklo.jpg">
+                    </a>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 class="text-lg">
+                            <a class="no-underline hover:underline text-black" href="#">
+                              Does your relationship deserve to be saved?
+                            </a>
+                        </h1>
+                        <p class="text-grey-darker text-sm">
+                            08/12/2021
+                        </p>
+                    </header>
+    
+                    <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                        <a class="flex items-center no-underline hover:underline text-black" href="#">
+                            <p class="ml-2 text-sm">
+                              Being in a relationship, it is, at least in theory, to live two good times and beautiful experiences, share the present moment with his partner and do one in all circumstances.The success of the couple depends on several factors: trust, communication, complicity, honesty or mutual respect.
+                            </p>
+                        </a>
+                        <a class="no-underline text-grey-darker hover:text-red-dark" href="./page1retliop.html">
+                            <span class="hidden">Like</span>
+                            <i class="fa fa-heart"></i>
+                        </a>
+                    </footer>
+    
+                </article>
+                <!-- END Article -->
+    
+            </div>
+            <!-- END Column -->
+    
+            <!-- Column -->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    
+                <!-- Article -->
+                <article class="overflow-hidden rounded-lg shadow-lg">
+    
+                    <a href="./page2retliop.html">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./img/page2photojuklo.jpg">
+                    </a>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 class="text-lg">
+                            <a class="no-underline hover:underline text-black" href="#">
+                              5 Questions about couple therapy
+                            </a>
+                        </h1>
+                        <p class="text-grey-darker text-sm">
+                            08/12/2021
+                        </p>
+                    </header>
+    
+                    <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                        <a class="flex items-center no-underline hover:underline text-black" href="#">
+                            <p class="ml-2 text-sm">
+                              When your couple runs through a difficult period, that it is in crisis and that the best advice of your friends (or the Internet) seem to not succeed in reversing the trend, the break can often appear as a fatality.But there is an alternative: that of collecting the help and advice of a person (psychologist, couple therapist) whose specialty is precisely to help couples find solutions to come out of their conflict situation.In this article, we make a focus on torque therapy.
+                            </p>
+                        </a>
+                        <a class="no-underline text-grey-darker hover:text-red-dark" href="./page2retliop.html">
+                            <span class="hidden">Like</span>
+                            <i class="fa fa-heart"></i>
+                        </a>
+                    </footer>
+    
+                </article>
+                <!-- END Article -->
+    
+            </div>
+            <!-- END Column -->
+    
+            <!-- Column -->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    
+                <!-- Article -->
+                <article class="overflow-hidden rounded-lg shadow-lg">
+    
+                    <a href="./page3retliop.html">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./img/page3photojuklo.jpg">
+                    </a>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 class="text-lg">
+                            <a class="no-underline hover:underline text-black" href="./page3olopasdaesnbfjkodwokilhgernio.html">
+                              Managing a couple separation
+                            </a>
+                        </h1>
+                        <p class="text-grey-darker text-sm">
+                            08/12/2021
+                        </p>
+                    </header>
+    
+                    <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                        <a class="flex items-center no-underline hover:underline text-black" href="#">
+                            <p class="ml-2 text-sm">
+                              The loving separation, and even if only his fear, can generate such psychological suffering that they sometimes suffice alone to dissuade a person from launching or engaging in a new love story.
+                            </p>
+                        </a>
+                        <a class="no-underline text-grey-darker hover:text-red-dark" href="./page3retliop.html">
+                            <span class="hidden">Like</span>
+                            <i class="fa fa-heart"></i>
+                        </a>
+                    </footer>
+    
+                </article>
+                <!-- END Article -->
+    
+            </div>
+            <!-- END Column -->
+    
+    
+    
+        </div>
+    </div>
+
+
+<footer class="border-t border-gray-200">
+  <div
+    class="
+      container
+      flex flex-wrap
+      items-center
+      justify-center
+      px-4
+      py-8
+      mx-auto
+      lg:justify-between
+    "
+  >
+    <div class="flex flex-wrap justify-center">
+      <ul class="flex items-center space-x-4">
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./contactpagekilop.html"><li>Contact</li></a>
+        <a href="./privacypolicyliksoal.html"><li>Terms</li></a>
+      </ul>
+    </div>
+    <div class="flex items-center my-4 lg:my-0">
+      <form class="flex flex-wrap items-center justify-center">
+        <div class="mb-2 lg:mb-0 lg:mr-2">
+          <input
+            type="text"
+            name="newsletter"
+            class="
+              w-full
+              px-3
+              py-2
+              text-gray-700
+              bg-gray-100
+              border border-gray-300
+              rounded
+              outline-none
+              focus:ring-1
+            "
+          />
+        </div>
+        <button
+          class="
+            px-6
+            py-2
+            text-white
+            bg-red-500
+            border-0
+            rounded
+            focus:outline-none
+            hover:bg-red-700
+          "
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+    <div class="flex justify-center mt-4 lg:mt-0">
+      <a href="https://facebook.com">
+        <svg
+          fill="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-6 h-6 text-blue-600"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://twitter.com" class="ml-3">
+        <svg
+          fill="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-6 h-6 text-blue-300"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://instagram.com" class="ml-3">
+        <svg
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-6 h-6 text-pink-400"
+          viewBox="0 0 24 24"
+        >
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path
+            d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://linkedin.com" class="ml-3">
+        <svg
+          fill="currentColor"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="0"
+          class="w-6 h-6 text-blue-500"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="none"
+            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+          ></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="bg-gray-900">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-white text-sm text-center sm:text-left">© 2021 lipoleks | All rights reserved
+      </p>
+      </div>
+      </div>
+</footer>
+        
+
+	</body>
+</html>
